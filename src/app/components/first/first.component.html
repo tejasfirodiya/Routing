@@ -1,0 +1,14 @@
+<p>first works!</p>
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <div class="list-group">
+            <a [routerLink]="['/products', product.id, product.name]" class="list-group-item" *ngFor="let product of products">
+                {{product.name}}
+            </a>
+
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <router-outlet></router-outlet>
+    </div>
+</div>
